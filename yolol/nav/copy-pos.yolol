@@ -1,0 +1,2 @@
+x=:XX-(:XX%1) y=:YY-(:YY%1) z=:ZZ-(:ZZ%1)
+:CopyPos=":WX="+x+" :WY="+y+" :WZ="+z goto1
