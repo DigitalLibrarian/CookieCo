@@ -1,0 +1,15 @@
+c11=" " c13=" " c15=" " c22=" " c23=" " c24=" " c31=" " c32=" "
+c33="@" c34=" " c35=" " c42=" " c43=" " c44=" " c51=" " c53=" "
+c55=" " w=8 k=13
+if:YH=="SW" then c42="/" gotow end if:YH=="NW" then c22="\" gotow end
+if:YH=="SE" then c44="\" gotow end if:YH=="NE" then c24="/" gotow end
+if:YH=="W" then c32="-" gotow end if:YH=="E" then c34="-" gotow end
+if:YH=="S" then c43="|" gotow end if:YH=="N" then c23="|" gotow end
+if:YW=="SW" then c51="*" gotok end if:YW=="NW" then c11="*" gotok end
+if:YW=="SE" then c55="*" gotok end if:YW=="NE" then c15="*" gotok end
+if:YW=="W" then c31="*" gotok end if:YW=="E" then c35="*" gotok end
+if:YW=="S" then c53="*" gotok end if:YW=="N" then c13="*" gotok end
+if:YW=="C" then c33="*" end
+l1="\n "+c11+"   "+c13+"   "+c15+"\n   "+c22+" "+c23+" "+c24
+l2="\n "+c31+" "+c32+" "+c33+" "+c34+" "+c35+"\n   "+c42+" "+c43
+l3=" "+c44+"  \n "+c51+"   "+c53+"   "+c55+" " :CompXY=l1+l2+l3 goto1
