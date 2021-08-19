@@ -1,0 +1,5 @@
+wX=:WX wY=:WY wZ=:WZ
+dX=abs(wX-:XX) dY=abs(wY-:YY) dZ=abs(wZ-:ZZ)
+sXD="\nWXD:"+(dX-(dX%1)) sYD="\nWYD:"+(dY-(dY%1)) 
+sZD=+"\nWZD:"+(dZ-(dZ%1))
+:WD=sXD+sYD+sZD goto 1

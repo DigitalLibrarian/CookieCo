@@ -1,0 +1,3 @@
+m="\nDis: " n="m\nVel: " o="m/s\nTTC: " p="s"
+b=:RFD if b==1000 or a==b then :RFS="" a=b goto2 end v=(a-b)*5 t=(b/v)
+:RFS=m+(b-b%1)+n+(v-v%1)+o+(t-t%1)+p a=:RFD goto2

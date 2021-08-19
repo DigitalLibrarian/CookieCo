@@ -1,0 +1,6 @@
+lP=:Propellant lF=:Fuel i=0
+if i++ < 24 then goto 2 end
+p=:Propellant f=:Fuel
+tc=((i*0.2)+2) dP=(lP-p)/tc dF=(lF-f)/tc 
+pM=(p/dP)/60 fM=(f/dF)/60 
+:TimeLeft="\n\nFuel Time: "+fM+"m"+"\nProp Time: "+pM+"m" goto 1

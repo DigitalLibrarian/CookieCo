@@ -1,0 +1,15 @@
+c11=" " c13=" " c15=" " c22=" " c23=" " c24=" " c31=" " c32=" "
+c33="@" c34=" " c35=" " c42=" " c43=" " c44=" " c51=" " c53=" "
+c55=" " w=8 k=13
+if:CH=="SW" then c42="/" gotow end if:CH=="NW" then c22="\" gotow end
+if:CH=="SE" then c44="\" gotow end if:CH=="NE" then c24="/" gotow end
+if:CH=="W" then c32="-" gotow end if:CH=="E" then c34="-" gotow end
+if:CH=="S" then c43="|" gotow end if:CH=="N" then c23="|" gotow end
+if:WH=="SW" then c51="*" gotok end if:WH=="NW" then c11="*" gotok end
+if:WH=="SE" then c55="*" gotok end if:WH=="NE" then c15="*" gotok end
+if:WH=="W" then c31="*" gotok end if:WH=="E" then c35="*" gotok end
+if:WH=="S" then c53="*" gotok end if:WH=="N" then c13="*" gotok end
+if:WH=="C" then c33="*" end
+l1="\n "+c11+"   "+c13+"   "+c15+"\n   "+c22+" "+c23+" "+c24
+l2="\n "+c31+" "+c32+" "+c33+" "+c34+" "+c35+"\n   "+c42+" "+c43
+l3=" "+c44+"  \n "+c51+"   "+c53+"   "+c55+" " :Compass=l1+l2+l3 goto1

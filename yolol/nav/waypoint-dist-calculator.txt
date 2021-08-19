@@ -1,0 +1,13 @@
+wX=:WX wY=:WY wZ=:WZ
+dX=wX-:XX dY=wY-:YY dZ=wZ-:ZZ lD=sqrt((dX*dX)+(dY*dY)+(dZ*dZ)) i=0
+ldx=dx ldy=dy ldz=dz  
+if i++ < 24 then goto 4 end
+dX=wX-:XX dY=wY-:YY dZ=wZ-:ZZ d=sqrt ((dX*dX)+(dY*dY)+(dZ*dZ))
+tc=((i*0.2)+2)  dD =(d-lD)/tc
+tx=-1*abs(dx-ldx)/tc ty=-1*abs(dy-ldy)/tc tz=-1*abs(dz-ldz)/tc
+sD="\nD:"+(d-(d%1)) sDD="\nDD:"+(dD-(dD%1))
+sDx="\nDX:"+tx sDy="\nDY:"+ty
+sDz="\nDZ:"+tz t=0 t=(d/dD)/60
+sT="\nETA:"+ -1*(t-(t%1))+"m"
+:WP=sD+sDD+sDx+sDy+sDz+sT
+goto 1

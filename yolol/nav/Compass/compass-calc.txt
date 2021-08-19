@@ -1,0 +1,20 @@
+d=sqrt((:DX*:DX)+(:DZ*:DZ)) nx=:DX/d nz=:DZ/d
+dX=nx dZ=nz r=0.35 min=-1*r max=r  if d<2 then :CH="" goto 11 end 	
+if dX<min and dZ<min then :CH="SE" goto 11 end
+if dX<min and dZ>max then :CH="NE" goto 11 end
+if dx>max and dZ<min then :CH="SW" goto 11 end
+if dx>max and dZ>max then :CH="NW" goto 11 end
+if dx<min then :CH="E" goto 11 end
+if dx>max then :CH="W" goto 11 end
+if dz<min then :CH="S" goto 11 end
+if dz>max then :CH="N" goto 11 end
+dX=:WX-:XX dZ=:WZ-:ZZ r=0.35 min=-1*r max=r
+d=sqrt((dX*dX)+(dZ*dZ)) dX=dX/d dZ=dZ/d
+if dX<min and dZ<min then :WH="SE" goto 1 end
+if dX<min and dZ>max then :WH="NE" goto 1 end
+if dx>max and dZ<min then :WH="SW" goto 1 end
+if dx>max and dZ>max then :WH="NW" goto 1 end
+if dx<min then :WH="E" goto 1 end
+if dx>max then :WH="W" goto 1 end
+if dz<min then :WH="S" goto 1 end
+if dz>max then :WH="N" goto 1 end :WH="C" goto 1

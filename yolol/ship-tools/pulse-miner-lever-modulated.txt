@@ -1,0 +1,5 @@
+:Laser = :Pulse and :LaserMod > 0
+if :LaserMod < 2 then :Laser = 0 end
+if :LaserMod < 3 then :Laser = 0 end
+if :LaserMod < 4 then :Laser = 0 end
+goto 1
