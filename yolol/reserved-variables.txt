@@ -1,0 +1,11 @@
+:XX		Position X component
+:YY		Position Y component
+:ZZ		Position Z component
+:DX		Velocity X component
+:DY		Velocity Y component
+:DZ		Velocity Z component
+:WX		Current way point X component
+:WY		Current way point Y component
+:WZ		Current way point Z component
+:Propellant	Total amount of propellant in all tanks (The GasNetworkStoredResource field from the Propellant Tank Support should be renamed to this for one of the tanks.)
+:Fuel		Total amount of fuel in all fuel rods (Some script should populate this by adding all the fuel chamber contents together).
