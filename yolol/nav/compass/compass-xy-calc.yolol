@@ -17,3 +17,4 @@ if dx>max and dY>max then :YW="NW" goto 1 end
 if dx<min then :YW="E" goto 1 end
 if dx>max then :YW="W" goto 1 end
 if dY<min then :YW="S" goto 1 end
+if dY>max then :YW="N" goto 11 end

@@ -17,3 +17,4 @@ if dx>max and dZ>max then :ZW="NW" goto 1 end
 if dx<min then :ZW="E" goto 1 end
 if dx>max then :ZW="W" goto 1 end
 if dz<min then :ZW="S" goto 1 end
+if dY>max then :ZW="N" goto 11 end
