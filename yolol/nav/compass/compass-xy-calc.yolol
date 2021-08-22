@@ -1,5 +1,5 @@
 d=sqrt((:DX*:DX)+(:DY*:DY)) nx=:DX/d ny=:DY/d
-dX=nx dY=ny r=0.5 min=-1*r max=r if d<2 then :YH="" goto 11 end 
+dX=nx dY=ny r=0.55 min=-1*r max=r if d<2 then :YH="" goto 11 end 
 if dX<min and dY<min then :YH="SE" goto 11 end
 if dX<min and dY>max then :YH="NE" goto 11 end
 if dx>max and dY<min then :YH="SW" goto 11 end
@@ -8,7 +8,7 @@ if dx<min then :YH="E" goto 11 end
 if dx>max then :YH="W" goto 11 end
 if dY<min then :YH="S" goto 11 end
 if dY>max then :YH="N" goto 11 end
-dX=:WX-:XX dY=:WY-:YY r=0.5 min=-1*r max=r
+dX=:WX-:XX dY=:WY-:YY r=0.55 min=-1*r max=r
 d=sqrt((dX*dX)+(dY*dY)) dX=dX/d dY=dY/d
 if dX<min and dY<min then :YW="SE" goto 1 end
 if dX<min and dY>max then :YW="NE" goto 1 end
