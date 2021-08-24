@@ -9,3 +9,7 @@
 :WZ		Current way point Z component
 :Propellant	Total amount of propellant in all tanks (The GasNetworkStoredResource field from the Propellant Tank Support should be renamed to this for one of the tanks.)
 :Fuel		Total amount of fuel in all fuel rods (Some script should populate this by adding all the fuel chamber contents together).
+:YW		XY compass waypoint direction
+:YH		XY compass trajectory direction
+:ZW		XZ compass waypoint direction
+:ZH		XZ compass trajectory direction
