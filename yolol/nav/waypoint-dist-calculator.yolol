@@ -9,5 +9,4 @@ sD="\nD:"+(d-(d%1)) sDD="\nDD:"+(dD-(dD%1))
 sDx="\nDX:"+tx sDy="\nDY:"+ty
 sDz="\nDZ:"+tz t=0 t=(d/dD)/60
 sT="\nETA:"+ -1*(t-(t%1))+"m"
-:WP=sD+sDD+sDx+sDy+sDz+sT
-goto 1
+:WP=sD+sDD+sDx+sDy+sDz+sT goto 1

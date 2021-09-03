@@ -5,5 +5,4 @@ x=:XX y=:YY z=:ZZ
 tc=((i*0.2)+2)  :DX=(x-lX)/tc :DY=(y-lY)/tc :DZ=(z-lZ)/tc
 tx=:DX ty=:DY tz=:DZ
 sDx="\nDX:"+tx sDy="\nDY:"+ty sDz="\nDZ:"+tz
-:DP=sDx+sDy+sDz
-goto 1
+:DP=sDx+sDy+sDz goto 1
